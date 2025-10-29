@@ -5,8 +5,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>NASA Space Explorer</title>
   <link href="style.css" rel="stylesheet" type="text/css" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+
 </head>
-<body>
+
   <div class="container">
     <header class="site-header">
       <img src="img/nasa-worm-logo.png" alt="NASA Logo" class="logo" />
@@ -14,17 +16,22 @@
     </header>
 
     <div class="filters">
-      <button id="getImageBtn">Fetch Space Images</button>
+      <input type="date" id="startDate" aria-label="Start date" />
+      <input type="date" id="endDate" aria-label="End date" />
+      <button id="getImageBtn">Get Space Images</button>
     </div>
+    
+    <!-- 随机太空知识区 -->
+    <div id="spaceFact" class="space-fact"></div>
 
+    <!-- Gallery 区 -->
     <div id="gallery" class="gallery">
       <div class="placeholder">
         <div class="placeholder-icon">🔭</div>
         <p>Click "Fetch Space Images" to explore the cosmos!</p>
       </div>
     </div>
-  </div>
-
+    
   <script src="js/script.js"></script>
 </body>
 </html>
